@@ -1,0 +1,16 @@
+CSS - templatemo-style.css
+- en navegacion opriginal es 
+#main-nav ul { //navegacion superior , responsive nav renglon 147
+    text-align: center;
+    background-color:  rgba(0,0,0,0.9);// se cambia por rgba(60,118,61,0.9)
+    margin-top: 59px;
+    width: 100%;
+}
+.sidebar-navigation { //navegacion normal
+  width: 22.5%;
+  float: left;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0,0,0,0.9);// se cambia por rgba(60,118,61,0.9);
+  z-index: 10;
+}

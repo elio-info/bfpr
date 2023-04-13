@@ -181,7 +181,7 @@ header {
   float: left;
   height: 100%;
   position: fixed;
-  background-color: rgba(12,12,12,0.9);
+  background-color: rgba(60,118,61,0.9);
   z-index: 10;
 }
 
@@ -414,15 +414,15 @@ header {
 }
 
 .Modern-Slider .item-1 .image {
-  background-image: url(../img/slide_1.jpg);
+  background-image: url("../img/slides/bio_slide_arroz_guane_2022low.JPG");
 }
 
 .Modern-Slider .item-2 .image {
-  background-image: url(../img/slide_2.jpg);
+  background-image: url("../img/slides/bio_slide_boniato_guane_2022low.JPG");
 }
 
 .Modern-Slider .item-3 .image {
-  background-image: url(../img/slide_3.jpg);
+  background-image: url("../img/slides/bio_slide_frijol_guane_2023.JPG");
 }
 
 .Modern-Slider .PrevArrow:before{content:'\f104';}
