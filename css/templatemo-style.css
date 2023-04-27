@@ -56,9 +56,14 @@ p {
   color: #45489a;
 }
 
+.section-heading h2 em {
+  font-style: normal;
+  font-weight: 700;
+  color: #3c783ccc;
+}
 .section-heading p {
   display: inline-block;
-  font-size: 15px;
+  font-size: 25px;
   line-height: 26px;
   color: #343434;
   position: absolute;
@@ -354,7 +359,7 @@ header {
 }
 
 .Modern-Slider .info p {
-  font-size: 15px;
+  font-size: 30px;
   color: #fff;
 }
 
