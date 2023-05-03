@@ -738,10 +738,7 @@ header {
   list-style: none;
   margin: 0px;
   padding: 0px;
-  height: 90px;
-  width: 100%;
-  background-color: #eee;
-  border-bottom: 10px solid #45489a;
+  width: 100%;  
 }
 
 #blog .tabs li {
@@ -767,7 +764,7 @@ header {
 }
 
 #blog .tabs a:hover {
-  color: #45489a;
+  color: #2B8833;
 }
 
 
@@ -776,12 +773,12 @@ header {
 }
 
 #blog .tabs .active {
-  background-color: #45489a;
+  background-color: #2B8833;
   color: #fff;
 }
 
 .tabgroup {
-  background-color: #f4f4f4;
+  background-color: #D6F2D9;
   padding: 20px 30px;
 }
 

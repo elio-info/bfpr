@@ -34,7 +34,7 @@
 		</div>
 	</div>
 
-	
+	<input type="file" id="myf" webkitdirectory directory  multiple onchange="leefil()">
 	<button>
 		Esto es un boton
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
@@ -42,6 +42,22 @@
 </svg>
 
 	</button>
+    
+    <button id="wj">
+    <svg width="20" height="20">
+    <circle cx="10" cy="10" r="5" fill="red"/>
+  </svg>
+  Haz clic aquí
+</button>
+    
+    <button id="perr">
+    <img width="20" height="20" src="../img/logo BiofertPinar.svg">
+  Haz clic aquí
+    </button>
+     <button id="perr">
+    <img width="20" height="20" src="../img/por fin upr.gif">
+  Haz clic aquí
+    </button>
 <div class="container bg-success" hidden="true">
     <h3 class="text-info">My First Bootstrap Page</h3>
     <div class="tabs">
@@ -135,6 +151,15 @@
 <script src="../js/vendor/bootstrap.min.js"></script>
 <script src="../js/plugins.js"></script>
 <script src="../js/main.js"></script>
-
+<script >
+    function leefil(){
+        const inp=document.getElementById("myf");
+        for (i = 0; i < inp.files.length; i++) {
+      let file = inp.files[i];
+      console.log(file.name, file.webkitRelativePath, file.size);
+  }
+        alert("azskygbibi"+ mipp.baseURI);
+    }
+</script>
 </body>
 </html>
