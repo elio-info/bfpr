@@ -1,0 +1,37 @@
+LABIOFAM
+    1-CV_Angel.pdf,Angel de la Caridad Barrio García, no correo,no orcid,En la Empresa LABIOFAM me desempeño como especialista principal en el control de vectores, además llevo el cargo de Secretario del fórum de Ciencia y Técnica, el de presidente del Órgano de Base del Consejo Científico Veterinario, Integrante del programa del SAN Soberanía Alimentaria y Nutricional y del proyecto de Bioproductos con la Universidad de Pinar del Rio Hermanos Saiz.
+
+UCTB_INCA_LosPalacios
+   1- CV-Michel.pdf,Michel Ruiz Sánchez,mich@inca.edu.cu,http://orcid.org/0000-0002-7406-4715
+
+    2-CV-Rosely.pdf,Roselys Rodriguez Pérez,: rossrp@inca.edu.cu, https://orcid.org/0000-0002-2397-708X
+
+UCTB_IS_PinardelRío
+    1-CV-Edel.pdf,Edel Jesús Amaro Aroche,no correo, no orcid,Especialista en Manejo Sostenible de Tierras,se vincula desde el 1996 a todo el trabajo, en Mantua, para el progreso de la agricultura en ese territorio.
+
+    2-CV-Pedro.pdf,Pedro Alejandro Villafranca Barrios,investigador8@suelopri.minag.cu, no orcid, Se ha desarrollado, en estos últimos 7 años, como investigador en la Dirección Provincial de Suelos y Fertilizantes, Pinar del Rio, perteneciente al Instituto de Suelos de Cuba.
+
+UPR
+    1-CV-Adrián.pdf,Adrián Trujillo Padrón,adrian.trujillop@upr.edu.cu,https://orcid.org/0000-0002-1938-2585
+    
+    2-CV-Edenys.pdf,Edenys Miranda Izquierdo, emiranda@upr.edu.cu, https://orcid.org/0000-0002-5728-4601
+    
+    3-CV-Eliomar.pdf, Eliomar Rodríguez Izquierdo,elio.ing.info@gmail.com,https://orcid.org/0000-0002-1763-5198
+    
+    4-CV-Kirenia.pdf,Kirenia Caridad Torres Ramos, kirenia@upr.edu.cu,no orcid, Especialista en Fruticultura Tropical,se vincula desde el 2006 a todo el trabajo, en Mantua, para el progreso de la agricultura en ese territorio.
+    
+    5-CV-Luis.pdf,Luis Alberto García Velázquez, luis.garciav@upr.edu.cu,no orcid
+
+    6-CV-Madelyn.pdf,Madelyn Fernández Barrios,madelyn.fernandez@upr.edu.cu,no orcid,Estudios asociados a la agricultura desde el 1999,incidiendo en resultados favorables en su territorio.
+    
+    7-CV-MariaTeresa.pdf,María Teresa Martínez Echevarría,aliery@upr.edu.cu,no orcid, Estudios sobre la contaminación,mejor uso de los bioquímica en la nutrición y otros, han dado resultados desde el 2008 en Pinar del Río.
+    
+    8-CV-Yaumara.pdf,Yaumara Muñoz Hernández,yaumara@upr.edu.cu,no orcid,Vincula su investigación agrícola, desde el 2016, en lo referente a los suelos.Sus importantes resultados han impactado en el territorio.
+
+    9-CV-Yoerlandy.pdf,Yoerlandy Santana Baños, yoerlandy@upr.edu.cu, https://orcid.org/0000-0003-3793-7828
+    
+    10-CV-Yoisbel.pdf, Yoisbel Fuentes González, yoi@upr.edu.cu, no orcid, Vinculado a la investigación agrícola desde el 2006.Sus importantes resultados han impactado en el territorio de La Palma.
+    
+    11-CV-Yosbel.pdf,Yosbel López Quintana, yosbel.lopez@.upr.edu.cu,no orcid,Con maestrías agroecológicas, su vinculación se remonta desde 2016.
+    
+    12-CV-Yosvel.pdf,Yosvel Sanjudo Ramos,yosvel.ramos@upr.edu.cu , no orcid,Vinculado a la investigación agrícola desde el 2016.Sus importantes resultados han impactado en el territorio.
