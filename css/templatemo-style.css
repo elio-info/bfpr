@@ -853,13 +853,13 @@ header {
   list-style: none;
   margin: 0px;
   padding: 0px;
-  width: 100%;  
+  width: 80%;  
 }
 
 #resul .tabs li {
   display: inline-block;
   text-align: center;
-  width: 25%;
+  width: 20%;
   float: left;
   margin: 0;
   padding: 0;
