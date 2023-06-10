@@ -2,17 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap2.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/light-box.css">
+        <link rel="stylesheet" href="css/owl-carousel.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
     <link href="css/bootstrap5.mio.min.css" rel="stylesheet" type="text/css">
     <link href="css/miss.css" rel="stylesheet" type="text/css">
-    <style>
-body{
-	background:#eee;
-}
-.btn-check:focus+.btn, .btn:focus {
-    outline: 0;
-    box-shadow: none;
-}
-    </style>
+   
 </head>
 <body>
     <div class="container mt-5">
@@ -26,11 +24,46 @@ body{
               </button>
             </h2>
           </div>
-
-          <div id="collapseGn" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div id="collapseGn" class="collapse " aria-labelledby="headingGn" data-parent="#accordionExample">
             <div class="card-body">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              Efectos de los bioproductos EcoMic® y QuitoMax® en algunos parámetros morfológicos de los cultivos.            
+             
+             <div class="tabSpecial">
+              <button class="tablinks" onclick="openResult(event, 'GnArroz')" id="defaultOpen">Arroz</button>
+              <button class="tablinks" onclick="openResult(event, 'GnBoniato')">Boniato</button>
+              <button class="tablinks" onclick="openResult(event, 'GnFrijoles')">Frijoles</button>
             </div>
+            
+            <div id="GnArroz" class="tabSpecialcontent">
+              <h3>2022<h1>rtetdertrdty</h1></h3>
+              <p>EcoMic® y QuitoMax®,cultivo Oriza sativa cv. INCA LP-7</p>
+			  <img src="dbsite/evidencias/guane_arroz2022/DSCN1643.JPG" width="50%" height="50%">
+              <img src="dbsite/evidencias/guane_arroz2022/DSCN2008.JPG" width="50%" height="50%">
+              <img src="dbsite/evidencias/guane_arroz2022/DSCN2099.JPG" width="50%" height="50%">
+              <img src="dbsite/evidencias/guane_arroz2022/DSCN2162.JPG" width="50%" height="50%">
+              <img src="dbsite/evidencias/guane_arroz2022/DSCN2205.JPG" width="50%" height="50%">
+              <img src="dbsite/evidencias/guane_arroz2022/DSCN2212.JPG" width="50%" height="50%">
+              <img src="dbsite/evidencias/guane_arroz2022/DSCN2403.JPG" width="50%" height="50%">
+              <img src="dbsite/evidencias/guane_arroz2022/DSCN2404.JPG" width="50%" height="50%">
+              <img src="dbsite/evidencias/guane_arroz2022/DSCN2409.JPG" width="50%" height="50%">
+              		  
+            </div>
+            <div id="GnBoniato" class="tabSpecialcontent">
+              <h3>2022</h3>
+              <p>QuitoMax®,cultivo de Ipomoea batata cv. INIVIT BS- 16 2006</p> 
+            </div>
+            
+            <div id="GnFrijoles" class="tabSpecialcontent">
+              <h3>Tokyo</h3>
+              <p>Tokyo is the capital of Japan.</p>
+              <div class="item">
+                                <div class="col-md-2">
+                                    <a href="img/result2/lechugaMantua2023.jpg" data-lightbox="image">
+                                        <img src="dbsite/evidencias/guane_boniato2023/DSCN1707.JPG" alt="image 4"></a>
+                                </div>
+              </div>
+            </div>
+          </div>
           </div>
           </div>
           <div class="card" id="VerLaPalma">
@@ -83,7 +116,26 @@ body{
             </div>
             <div id="collapseSnd" class="collapse" aria-labelledby="headingSnd" data-parent="#accordionExample">
               <div class="card-body">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Senectus et netus et malesuada fames ac turpis. Rhoncus dolor purus non enim.
+                <div class="tabSpecial">
+  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+</div>
+
+<div id="London" class="tabSpecialcontent">
+  <h3>London</h3>
+  <p>London is the capital city of England.</p>
+</div>
+
+<div id="Paris" class="tabSpecialcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="Tokyo" class="tabSpecialcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
                 </div>
             </div>
             </div>
@@ -92,6 +144,8 @@ body{
 
 <script src="js/bootstrap5.bundle.min.js"></script>
 <script src="js/vendor/jquery-1.11.2.min.js" ></script>
-
+<script src="js/plugins.js" ></script>
+<script src="js/main.js" ></script>
+<script src="js/myfuncs.js" ></script>
 </body>
 </html>
