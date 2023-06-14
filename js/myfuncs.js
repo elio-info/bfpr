@@ -33,7 +33,8 @@ function abrir_Modal_en(nombre_Secc,imagen_Numero) {//abrir modal en la figura t
 
 }
  function llenar_con_Imagenes(donde_llenar,que_buscar) {
-  let imagenes=get_elements_for(que_buscar);
+     //
+     let imagenes=get_elements_for(que_buscar);
    for (let i=1;i<= imagenes.length;i++) {
        //crear div interno
        let div_out= document.createElement("div");
@@ -52,9 +53,7 @@ function abrir_Modal_en(nombre_Secc,imagen_Numero) {//abrir modal en la figura t
          //insertar img en div div_inner
        div_inner.appendChild(img);
        div_out.appendChild(div_inner);
-       //limpiar mySlydes
-       vaciarElementosHijos(donde_llenar,"mySlides")
-       //llenar mySlydes
+        //llenar mySlydes
        donde_llenar.appendChild(div_out);
      //console.log(img);
    }
@@ -62,8 +61,10 @@ function abrir_Modal_en(nombre_Secc,imagen_Numero) {//abrir modal en la figura t
 
 
 function vaciarElementosHijos(objeto_a_vaciar,campo_a_buscar) {
-    for (const objetoAVaciarElement of objeto_a_vaciar.getSeAll("class:campo_a_buscar")) {
-        let pp=objetoAVaciarElement.get("class");
+    for (var i=objeto_a_vaciar.length;i>0;i--) {
+            objeto_a_vaciar[i-1].remove();
+           // objeto_a_vaciar.
+        //let pp=objetoAVaciarElement.get("class");
     }
 }
 
@@ -71,8 +72,12 @@ function vaciarElementosHijos(objeto_a_vaciar,campo_a_buscar) {
 
 function show_Slides_on_Modal(que,n) {
   var i;
-  llenar_con_Imagenes(get_elements_for("myContenido","Id"),que);
-  var slides = get_elements_for("mySlides");
+    var slides = get_elements_for("mySlides");
+    //limpiar mySlydes
+    vaciarElementosHijos(slides,"mySlides")
+
+    llenar_con_Imagenes(get_elements_for("myContenido","Id"),que);
+
   var dots = get_elements_for("demo");
   var captionText = get_elements_for("caption","Id");
   if (n >= slides.length) {slideIndex = 1}
