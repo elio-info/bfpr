@@ -20,23 +20,62 @@ function get_elements_for(nombre,clase) {//tomar los elementos de
       return document.getElementById(nombre);
       break;
   
-    default:return document.getElementsByClassName();
+    default:return document.getElementsByClassName(nombre);
       break;
   }
   
 }
-
+var slideIndex = 1;
 function abrir_Modal_en(nombre_Secc,imagen_Numero) {//abrir modal en la figura tal
-  document.getElementById(nombre_Secc).style.display = "block";//mostrae el modal que pertenece al Id XXX
-  show_Slides_on_Modal(imagen_Numero);//
+  show_Slides_on_Modal(nombre_Secc, imagen_Numero);//
+
+  document.getElementById("myModal").style.display = "block";//mostrae el modal que pertenece al Id XXX
+
+}
+ function llenar_con_Imagenes(donde_llenar,que_buscar) {
+  let imagenes=get_elements_for(que_buscar);
+   for (let i=1;i<= imagenes.length;i++) {
+       //crear div interno
+       let div_out= document.createElement("div");
+        div_out.setAttribute("class","mySlides");
+        let div_inner= document.createElement("div");
+            div_inner.setAttribute("class","numbertext");
+            let cartel=i & " / " & imagenes.length;
+            div_inner.setAttribute("innerHTML",cartel );
+
+       let imagen=imagenes[i-1];
+       let ruta=imagen.src;
+       let img= document.createElement("img");
+         img.setAttribute( "id","la perra" );
+         img.setAttribute("src",ruta);
+
+         //insertar img en div div_inner
+       div_inner.appendChild(img);
+       div_out.appendChild(div_inner);
+       //limpiar mySlydes
+       vaciarElementosHijos(donde_llenar,"mySlides")
+       //llenar mySlydes
+       donde_llenar.appendChild(div_out);
+     //console.log(img);
+   }
+ }
+
+
+function vaciarElementosHijos(objeto_a_vaciar,campo_a_buscar) {
+    for (const objetoAVaciarElement of objeto_a_vaciar.getSeAll("class:campo_a_buscar")) {
+        let pp=objetoAVaciarElement.get("class");
+    }
 }
 
-function show_Slides_on_Modal(n) {
+
+
+function show_Slides_on_Modal(que,n) {
   var i;
+  llenar_con_Imagenes(get_elements_for("myContenido","Id"),que);
   var slides = get_elements_for("mySlides");
   var dots = get_elements_for("demo");
-  var captionText = get_elements_for("caption","id");
-  if (n > slides.length) {slideIndex = 1}
+  var captionText = get_elements_for("caption","Id");
+  if (n >= slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
@@ -58,7 +97,7 @@ function closeModal() {
   document.getElementById("myModal").style.display = "none";
 }
 /*
-var slideIndex = 1;
+
 showSlides(slideIndex);
 */
 function plusSlides(n) {
