@@ -33,7 +33,7 @@ function abrir_Modal_en(nombre_Secc,imagen_Numero) {//abrir modal en la figura t
 
 }
  function llenar_con_Imagenes(donde_llenar,que_buscar) {
-     //
+    //
      let imagenes=get_elements_for(que_buscar);
    for (let i=1;i<= imagenes.length;i++) {
        //crear div interno
@@ -41,8 +41,9 @@ function abrir_Modal_en(nombre_Secc,imagen_Numero) {//abrir modal en la figura t
         div_out.setAttribute("class","mySlides");
         let div_inner= document.createElement("div");
             div_inner.setAttribute("class","numbertext");
-            let cartel=i & " / " & imagenes.length;
-            div_inner.setAttribute("innerHTML",cartel );
+            let cartel= i + " / " + imagenes.length;
+            div_inner.textContent=cartel;
+            div_inner.alt=cartel;
 
        let imagen=imagenes[i-1];
        let ruta=imagen.src;
@@ -52,9 +53,12 @@ function abrir_Modal_en(nombre_Secc,imagen_Numero) {//abrir modal en la figura t
 
          //insertar img en div div_inner
        div_inner.appendChild(img);
+       //llenar mySlydes
        div_out.appendChild(div_inner);
-        //llenar mySlydes
-       donde_llenar.appendChild(div_out);
+        //coger delante de quien se pondra
+        let delante_de=donde_llenar.firstChild;
+        //llenar siempre de primero
+       donde_llenar.insertBefore( div_out, delante_de);
      //console.log(img);
    }
  }
@@ -90,7 +94,8 @@ function show_Slides_on_Modal(que,n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+  let letrero_a_mostrar=" perrass  y regias"+dots[slideIndex-1].alt;
+  captionText.innerHTML = letrero_a_mostrar;
 }
 
 //original
