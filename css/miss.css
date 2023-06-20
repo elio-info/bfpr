@@ -82,21 +82,22 @@
 /* The Modal (background) */
 .modalDiv {
     display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 10%;
+    margin-top: 0%;
+    position: absolute;
+    z-index: 1000;
+    padding-top: 4%;
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    
     overflow: auto;
-    background-color: #00000099;
+    background-color: #000;
 }
 
 /* Modal Content */
 .modalDiv-content {
     position: relative;
-    background-color: #fefefe;
+    background-color: #000;
     margin: auto;
     padding: 0;
     width: 80%;
@@ -166,6 +167,9 @@
     position: absolute;
     top: 0;
 }
+.mySlides img{
+    width: 100%;    
+}
 
 img {
     margin-bottom: -4px;
@@ -178,12 +182,14 @@ img {
     color: white;
 }
 
-.demo {
+.modal_demo {
     opacity: 0.6;
 }
 
-.active,
-.demo:hover {
+
+
+.modal_active,
+.modal_demo:hover {
     opacity: 1;
 }
 

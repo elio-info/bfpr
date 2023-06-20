@@ -27,7 +27,7 @@ function get_elements_for(nombre,clase) {//tomar los elementos de
 }
 var slideIndex = 1;
 function abrir_Modal_en(nombre_Secc,imagen_Numero) {//abrir modal en la figura tal
-  show_Slides_on_Modal(nombre_Secc, imagen_Numero);//
+  create_Slides_on_Modal(nombre_Secc, imagen_Numero);//
 
   document.getElementById("myModal").style.display = "block";//mostrae el modal que pertenece al Id XXX
 
@@ -51,8 +51,8 @@ function abrir_Modal_en(nombre_Secc,imagen_Numero) {//abrir modal en la figura t
          img.setAttribute( "id","la perra" );
          img.setAttribute("src",ruta);
 
-         //insertar img en div div_inner
-       div_inner.appendChild(img);
+         //insertar img en div div_out
+       div_out.appendChild(img);
        //llenar mySlydes
        div_out.appendChild(div_inner);
         //coger delante de quien se pondra
@@ -60,41 +60,38 @@ function abrir_Modal_en(nombre_Secc,imagen_Numero) {//abrir modal en la figura t
         //llenar siempre de primero
        donde_llenar.insertBefore( div_out, delante_de);
      //console.log(img);
+     
+       
    }
  }
 
 
-function vaciarElementosHijos(objeto_a_vaciar,campo_a_buscar) {
+function vaciarElementosHijos(objeto_a_vaciar) {
     for (var i=objeto_a_vaciar.length;i>0;i--) {
-            objeto_a_vaciar[i-1].remove();
-           // objeto_a_vaciar.
-        //let pp=objetoAVaciarElement.get("class");
+            objeto_a_vaciar[i-1].remove();          
     }
 }
 
 
 
-function show_Slides_on_Modal(que,n) {
+function create_Slides_on_Modal(que,n) {
   var i;
     var slides = get_elements_for("mySlides");
     //limpiar mySlydes
-    vaciarElementosHijos(slides,"mySlides")
-
+    vaciarElementosHijos(slides)
+    
+//LLENAR las images de slides y fondo bajo
     llenar_con_Imagenes(get_elements_for("myContenido","Id"),que);
 
-  var dots = get_elements_for("demo");
-  var captionText = get_elements_for("caption","Id");
+   var captionText = get_elements_for("caption","Id");
   if (n >= slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
+ 
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  let letrero_a_mostrar=" perrass  y regias"+dots[slideIndex-1].alt;
+  let letrero_a_mostrar=" perrass  y regias";
   captionText.innerHTML = letrero_a_mostrar;
 }
 
@@ -121,17 +118,14 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
+  
   var captionText = document.getElementById("caption");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
+  
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
