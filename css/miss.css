@@ -58,7 +58,9 @@
 
 /* Create an active/current "tab button" class */
 .tabSpecial button.active {
-  background-color: #ccc;
+  background-color: #3c763de6;
+  color: #eee;
+
 }
 
 /* Style the tab content */
@@ -69,6 +71,13 @@
   width: 70%;
   border-left: none;
   height: 80%;
+  background-color: #f7b366e6;
+}
+
+.tabSpecialcontent li{
+    letter-spacing: .8px;
+    text-align: justify;
+    
 }
 /*  Ends tabs things   */
 

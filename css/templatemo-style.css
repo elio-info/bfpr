@@ -596,6 +596,20 @@ header {
   margin-bottom: 12.5px;
 }
 
+/* FProyectProjects Style */
+
+#fproy {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 80px;
+  border-bottom: 1px solid #eee;
+}
+ .color-fondo-verdeclaro {
+  background-color: #456648;
+ }
+
+ 
+
 
 
 /* Projects Style */
@@ -732,6 +746,7 @@ header {
   padding-left: 60px;
   padding-right: 60px;
   padding-bottom: 80px;
+  border-bottom: 1px solid #eee;
 }
 
 #blog  .tabs {
