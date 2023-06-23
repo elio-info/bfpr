@@ -2,18 +2,99 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/bootstrap2.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/fontAwesome.css">
         <link rel="stylesheet" href="css/light-box.css">
         <link rel="stylesheet" href="css/owl-carousel.css">
         <link rel="stylesheet" href="css/templatemo-style.css">
     <link href="css/bootstrap5.mio.min.css" rel="stylesheet" type="text/css">
+    <link href="css/OpenSans_300_hasta_800.css" rel="stylesheet">
     <link href="css/miss.css" rel="stylesheet" type="text/css">
    
 </head>
 <body>
-  
+  <header class="nav-down responsive-nav hidden-lg hidden-md">
+    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    <!--/.navbar-header-->
+    <div id="main-nav" class="collapse navbar-collapse">
+        <nav>
+            <ul class="nav navbar-nav">
+                <li><a href="#top">Inicio</a></li>
+                <li><a href="#featured">Datos Importantes</a></li>
+                <li><a href="#blog">Recursos Humanos</a></li>
+                <li><a href="#video">Fundamentos del proyecto</a></li>
+                <li><a href="#projects">Impactos productivos por Territorios</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!-- navegacion superior -->
+<div class="sidebar-navigation hidde-sm hidden-xs">
+    <div class="logo"> 
+       <img src="img/utils/logo_BiofertPinar.svg" width="40%">
+       
+    </div>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html" target="_self">#top
+                    <span class="rect"></span>
+                    <span class="circle"></span>
+                    Inicio
+                </a>
+            </li>
+            <li>
+                <a href="#featured">
+                    <span class="rect"></span>
+                    <span class="circle"></span>
+                    Datos Importantes
+                </a>
+            </li>
+            <li>
+                <a href="#blog">
+                    <span class="rect"></span>
+                    <span class="circle"></span>
+                    Recursos Humanos
+                </a>
+            </li>
+            <li>
+                <a href="#video">
+                    <span class="rect"></span>
+                    <span class="circle"></span>
+                    Fundamentos del proyecto
+                </a>
+            </li>
+            <li>
+                <a href="#projects">
+                    <span class="rect"></span>
+                    <span class="circle"></span>
+                    Impactos productivos por Territorios
+                </a>
+            </li>
+            <li>
+                <a href="#contact">
+                    <span class="rect"></span>
+                    <span class="circle"></span>
+                    Contacto
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="social-icons">
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="#"><i class="fa fa-rss"></i></a></li>
+        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+    </ul>
+</div>
   <div class="container mt-5">
 			
     <div class="accordion" id="accordionExample">
@@ -146,179 +227,234 @@
                   </div>    
                 <!-- fin tab de prod-->            
               </div>
+            </div><!-- fin collapseguane [tiene cosas] -->
+      </div><!-- fin Verguane [tiene cosas] -->          
+          
+      <!-- la palma esta vacia -->
+      <div class="card" id="VerLaPalma">
+        <div class="card-header" id="headingLPlm">
+          <h2 class="mb-0">
+            <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseLPlm" aria-expanded="false" aria-controls="collapseLPlm">
+              La Palma
+            </button>
+          </h2>
+        </div><!-- fin id="headingLPlm" -->
+        <div id="collapseLPlm" class="collapse" aria-labelledby="headingLPlm" data-parent="#accordionExample">
+        <div class="card-body">
+          <h1>
+            Estamos en proceso de investigaci&oacute;n...
+          </h1>
+        </div>
+        </div><!-- fin id="collapseLPlm"[ no tiene cosas] -->          
+      </div><!--  fin id="VerLaPalma"-->
+          
+      <!-- mantua no esta vacia -->
+      <div class="card" id="VerMantua">
+        <div class="card-header" id="headingMnt">
+          <h2 class="mb-0">
+            <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseMnt" aria-expanded="false" aria-controls="collapseMnt">
+              Mantua
+            </button>
+          </h2>
+        </div><!--  fin id="headingMnt"-->
+        <div id="collapseMnt" class="collapse" aria-labelledby="headingMnt" data-parent="#accordionExample">
+          <div class="card-body">
+            <div class="fa-header">
+                Efectos de los bioproductos EcoMic® y QuitoMax® en algunos parámetros morfológicos de los cultivos.            
             </div>
+            <!-- botones de tab -->
+            <div class="tabSpecial">
+              <div class="m-2">
+                <button class="tablinks" onclick="openResult(event, 'MnHbch')" id="defaultOpen"> Habichuela </button>
+                <button class="tablinks" onclick="openResult(event, 'MnLchg')"> Lechuga </button>
+                <button class="tablinks" onclick="openResult(event, 'MnTmt')"> Tomate </button>                    
+              </div>  
+            </div>
+            <!-- fin de botones-->
+            <!-- tab de prod-->
+            <div class="m-8">
+                <div id="MnHbch" class="tabSpecialcontent ">
+                    <h3>EcoMic® ,cultivo Phaseolus vulgaris var. Vulgaris</h3>
+                    <p>2023</p>                      
+                  <div class="text-center">
+                    <a href="dbsite/evidencias/mantua_habichuela2023/IMG-20230405-WA0041.webp" data-lightbox="mantua_habichuela2023">
+                    <img class="col-md-5" src="dbsite/evidencias/mantua_habichuela2023/IMG-20230405-WA0041.webp" width="50%" height="50%">
+                    </a>
+                    <a href="dbsite/evidencias/mantua_habichuela2023/IMG-20230405-WA0044.webp" data-lightbox="mantua_habichuela2023">                          
+                    <img class="col-md-5" src="dbsite/evidencias/mantua_habichuela2023/IMG-20230405-WA0044.webp" width="50%" height="50%">
+                    </a>
+                  </div>  
+                </div>
+                <!-- oculto por defecto-->
+                <div id="MnLchg" class="tabSpecialcontent " style="display: none;">
+                  <h3>QuitoMax®,Phaseolus vulgaris L. cv Mantequilla y BAT 304.</h3>
+                  <p>2023</p>
+                  <div class="text-center">
+                  <a href="dbsite/evidencias/mantua_lechuga2023/IMG-20230405-WA0042.webp" data-lightbox="mantua_lechuga2023">
+                  <img class="col-md-4" src="dbsite/evidencias/mantua_lechuga2023/IMG-20230405-WA0042.webp" width="50%" height="50%">
+                  </a>
+                  <a href="dbsite/evidencias/mantua_lechuga2023/IMG-20230405-WA0043.webp" data-lightbox="mantua_lechuga2023">
+                    <img class="col-md-4" src="dbsite/evidencias/mantua_lechuga2023/IMG-20230405-WA0043.webp" width="50%" height="50%">
+                    </a>
+                    <a href="dbsite/evidencias/mantua_lechuga2023/IMG-20230405-WA0045.webp" data-lightbox="mantua_lechuga2023">
+                      <img class="col-md-4" src="dbsite/evidencias/mantua_lechuga2023/IMG-20230405-WA0045.webp" width="50%" height="50%">
+                      </a>
+                      <a href="dbsite/evidencias/mantua_lechuga2023/IMG-20230405-WA0046.webp" data-lightbox="mantua_lechuga2023">
+                        <img class="col-md-4" src="dbsite/evidencias/mantua_lechuga2023/IMG-20230405-WA0046.webp" width="50%" height="50%">
+                        </a>
+                  </div>                      
+                </div>  
+                <!-- oculto por defecto-->          
+                <div id="MnTmt" class="tabSpecialcontent" style="display: none;">
+                  <h3>EcoMic®, cultivo de Solanum lycopersicum.</h3>
+                  <p>2023</p>
+                    <!-- ghdhj-->
+                    <div class="text-center">                        
+                      <a href="dbsite/evidencias/mantua_tomate2023/IMG-20230111-WA0006.webp" data-lightbox="mantua_tomate2023">
+                          <img class="col-md-3 " src="dbsite/evidencias/mantua_tomate2023/IMG-20230111-WA0006.webp"  width="60%" height="60%">
+                      </a>
+                      <a href="dbsite/evidencias/mantua_tomate2023/IMG-20230206-WA0018.webp" data-lightbox="mantua_tomate2023">
+                        <img class="col-md-3 " src="dbsite/evidencias/mantua_tomate2023/IMG-20230206-WA0018.webp"  width="60%" height="60%">
+                    </a>
+                    <a href="dbsite/evidencias/mantua_tomate2023/IMG-20230206-WA0021.webp" data-lightbox="mantua_tomate2023">
+                      <img class="col-md-3 " src="dbsite/evidencias/mantua_tomate2023/IMG-20230206-WA0021.webp"  width="60%" height="60%">
+                  </a>
+                  <a href="dbsite/evidencias/mantua_tomate2023/IMG-20230206-WA0023.webp" data-lightbox="mantua_tomate2023">
+                    <img class="col-md-3 " src="dbsite/evidencias/mantua_tomate2023/IMG-20230206-WA0023.webp"  width="60%" height="60%">
+                </a>
+                <a href="dbsite/evidencias/mantua_tomate2023/IMG-20230206-WA0024.webp" data-lightbox="mantua_tomate2023">
+                  <img class="col-md-3 " src="dbsite/evidencias/mantua_tomate2023/IMG-20230206-WA0024.webp"  width="60%" height="60%">
+              </a>
+              <a href="dbsite/evidencias/mantua_tomate2023/IMG-20230206-WA0025.webp" data-lightbox="mantua_tomate2023">
+                <img class="col-md-3 " src="dbsite/evidencias/mantua_tomate2023/IMG-20230206-WA0025.webp"  width="60%" height="60%">
+            </a>
+                  </div>
+                </div>
+
+              </div>  <!-- fin tab de prod-->                            
+          </div><!-- fin card-body-->   
+        </div>
       </div>
-          <!-- fin guane [tiene cosas] -->
-          <!-- la palma esta vacia -->
-          <div class="card" id="VerLaPalma">
-          <div class="card-header" id="headingLPlm">
+      <!-- fin mantua [tiene cosas] -->
+      <!-- no esta vacia , falta -->
+      <div class="card" id="VerSanJuan">
+        <div class="card-header" id="headingSnJn">
+          <h2 class="mb-0">
+            <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSnJn" aria-expanded="false" aria-controls="collapseSnJn">
+              San Juan
+            </button>
+          </h2>
+        </div>
+        <div id="collapseSnJn" class="collapse" aria-labelledby="headingSnJn" data-parent="#accordionExample">
+          <div class="card-body">
+            <div class="fa-header">
+              Efectos de los bioproductos EcoMic® y QuitoMax® en algunos parámetros morfológicos de los cultivos.            
+            </div>
+            <!-- botones de tab -->              
+            <div class="tabSpecial">
+                <div class="m-2">
+                      <button class="tablinks" onclick="openResult(event, 'SnJnBnt')" id="defaultOpen"> Boniato </button>                                          
+                </div>  
+            </div><!-- fin de botones-->              
+            <!-- tab de prod-->
+            <div class="m-8">
+              <div id="SnJnBnt" class="tabSpecialcontent ">
+                <h3>QuitoMax® ,cultivo Ipomoea batata cv. INIVIT BS- 16 2006.</h3>
+                <p>2023</p>                      
+                <div class="text-center">
+                  <a href="dbsite/evidencias/sanjuan_boniato2023/IMG-20230310-WA0009.webp" data-lightbox="sanjuan_boniato2023">
+                  <img class="col-md-4" src="dbsite/evidencias/sanjuan_boniato2023/IMG-20230310-WA0009.webp" width="50%" height="50%">
+                  </a>
+                  <a href="dbsite/evidencias/sanjuan_boniato2023/IMG-20230310-WA0010.webp" data-lightbox="sanjuan_boniato2023">                          
+                  <img class="col-md-4" src="dbsite/evidencias/sanjuan_boniato2023/IMG-20230310-WA0010.webp" width="50%" height="50%">
+                  </a>
+                  <a href="dbsite/evidencias/sanjuan_boniato2023/IMG-20230310-WA0011.webp" data-lightbox="sanjuan_boniato2023">                          
+                    <img class="col-md-4" src="dbsite/evidencias/sanjuan_boniato2023/IMG-20230310-WA0011.webp" width="50%" height="50%">
+                  </a>
+                  <a href="dbsite/evidencias/sanjuan_boniato2023/IMG-20230310-WA0012.webp" data-lightbox="sanjuan_boniato2023">                          
+                    <img class="col-md-4" src="dbsite/evidencias/sanjuan_boniato2023/IMG-20230310-WA0012.webp" width="50%" height="50%">
+                  </a>
+                  <a href="dbsite/evidencias/sanjuan_boniato2023/IMG-20230310-WA0013.webp" data-lightbox="sanjuan_boniato2023">                          
+                    <img class="col-md-4" src="dbsite/evidencias/sanjuan_boniato2023/IMG-20230310-WA0013.webp" width="50%" height="50%">
+                  </a>
+                  <a href="dbsite/evidencias/sanjuan_boniato2023/IMG-20230310-WA0014.webp" data-lightbox="sanjuan_boniato2023">                          
+                    <img class="col-md-4" src="dbsite/evidencias/sanjuan_boniato2023/IMG-20230310-WA0014.webp" width="50%" height="50%">
+                  </a>
+                  <a href="dbsite/evidencias/sanjuan_boniato2023/IMG-20230310-WA0015.webp" data-lightbox="sanjuan_boniato2023">                          
+                    <img class="col-md-4" src="dbsite/evidencias/sanjuan_boniato2023/IMG-20230310-WA0015.webp" width="50%" height="50%">
+                  </a>
+                </div> <!-- fin center de prod-->
+              </div>   <!-- fin SnJnBnt de prod-->                  
+            </div><!-- fin m-8 de prod--> 
+          </div><!-- fin card-body-->
+        </div>
+        </div><!-- fin san juan [tiene cosas] -->
+        
+      <!--  esta vacia  -->
+        <div class="card" id="VerSnd">
+          <div class="card-header" id="headingSnd">
             <h2 class="mb-0">
-              <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseLPlm" aria-expanded="false" aria-controls="collapseLPlm">
-                La Palma
+              <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSnd" aria-expanded="false" aria-controls="collapseSnd">
+                Sandino
               </button>
             </h2>
           </div>
-          <div id="collapseLPlm" class="collapse" aria-labelledby="headingLPlm" data-parent="#accordionExample">
+          <div id="collapseSnd" class="collapse" aria-labelledby="headingSnd" data-parent="#accordionExample">
             <div class="card-body">
               <h1>
                 Estamos en proceso de investigaci&oacute;n...
               </h1>
             </div>
           </div>
-          </div>
-          <!-- fin guane [tiene cosas] -->
-          <!-- esta vacia -->
-          <div class="card" id="VerMantua">
-          <div class="card-header" id="headingMnt">
-            <h2 class="mb-0">
-              <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseMnt" aria-expanded="false" aria-controls="collapseMnt">
-                Mantua
-              </button>
-            </h2>
-          </div>
-          <div id="collapseMnt" class="collapse" aria-labelledby="headingMnt" data-parent="#accordionExample">
-            <div class="card-body">
-              <div class="fa-header">
-                  Efectos de los bioproductos EcoMic® y QuitoMax® en algunos parámetros morfológicos de los cultivos.            
-              </div>
-              <!-- botones de tab -->
-              <div class="tabSpecial">
-                  <div class="m-2">
-                        <button class="tablinks" onclick="openResult(event, 'MnHbch')" id="defaultOpen"> Habichuela </button>
-                        <button class="tablinks" onclick="openResult(event, 'MnLchg')"> Lechuga </button>
-                        <button class="tablinks" onclick="openResult(event, 'MnTmt')"> Tomate </button>                    
-                  </div>  
-              </div>
-              <!-- fin de botones-->
-              <!-- tab de prod-->
-              <div class="m-8">
-                  <div id="MnHbch" class="tabSpecialcontent ">
-                      <h3>EcoMic® ,cultivo Phaseolus vulgaris var. Vulgaris</h3>
-                      <p>2023</p>                      
-                    <div class="text-center">
-                      <a href="dbsite/evidencias/mantua_habichuela2023/IMG-20230405-WA0041.webp" data-lightbox="mantua_habichuela2023">
-                      <img class="col-md-5" src="dbsite/evidencias/mantua_habichuela2023/IMG-20230405-WA0041.webp" width="50%" height="50%">
-                      </a>
-                      <a href="dbsite/evidencias/mantua_habichuela2023/IMG-20230405-WA0044.webp" data-lightbox="mantua_habichuela2023">                          
-                      <img class="col-md-5" src="dbsite/evidencias/mantua_habichuela2023/IMG-20230405-WA0044.webp" width="50%" height="50%">
-                      </a>
-                    </div>  
-                  </div>
-                  <!-- oculto por defecto-->
-                  <div id="MnLchg" class="tabSpecialcontent " style="display: none;">
-                    <h3>QuitoMax®,Phaseolus vulgaris L. cv Mantequilla y BAT 304.</h3>
-                    <p>2023</p>
-                    <div class="text-center">
-                    <a href="dbsite/evidencias/mantua_lechuga2023/IMG-20230405-WA0042.webp" data-lightbox="mantua_lechuga2023">
-                    <img class="col-md-4" src="dbsite/evidencias/mantua_lechuga2023/IMG-20230405-WA0042.webp" width="50%" height="50%">
-                    </a>
-                    <a href="dbsite/evidencias/mantua_lechuga2023/IMG-20230405-WA0043.webp" data-lightbox="mantua_lechuga2023">
-                      <img class="col-md-4" src="dbsite/evidencias/mantua_lechuga2023/IMG-20230405-WA0043.webp" width="50%" height="50%">
-                      </a>
-                      <a href="dbsite/evidencias/mantua_lechuga2023/IMG-20230405-WA0045.webp" data-lightbox="mantua_lechuga2023">
-                        <img class="col-md-4" src="dbsite/evidencias/mantua_lechuga2023/IMG-20230405-WA0045.webp" width="50%" height="50%">
-                        </a>
-                        <a href="dbsite/evidencias/mantua_lechuga2023/IMG-20230405-WA0046.webp" data-lightbox="mantua_lechuga2023">
-                          <img class="col-md-4" src="dbsite/evidencias/mantua_lechuga2023/IMG-20230405-WA0046.webp" width="50%" height="50%">
-                          </a>
-                    </div>                      
-                  </div>  
-                  <!-- oculto por defecto-->          
-                  <div id="MnTmt" class="tabSpecialcontent" style="display: none;">
-                    <h3>QuitoMax®, cultivo de Phaseolus vulgaris L. cv Mantequilla y BAT 304.</h3>
-                    <p>2023</p>
-                      <!-- ghdhj-->
-                      <div class="text-center">
-                        <a href="dbsite/evidencias/guane_frijoles2023/IMG-20221210-WA0017.webp" data-lightbox="guane_frijoles2023">                        
-                          <img class="col-sm-10 col-md-3 col-lg-3" src="dbsite/evidencias/guane_frijoles2023/IMG-20221210-WA0017.webp"  >
-                        </a>
-                        <a href="dbsite/evidencias/guane_frijoles2023/IMG-20221210-WA0030.webp" data-lightbox="guane_frijoles2023">
-                            <img class="col-sm-10 col-md-3 col-lg-3" src="dbsite/evidencias/guane_frijoles2023/IMG-20221210-WA0030.webp"  width="50%" height="60%">
-                        </a>
-                        <a href="dbsite/evidencias/guane_frijoles2023/IMG-20221211-WA0003.webp" data-lightbox="guane_frijoles2023">
-                          <img class="col-sm-10 col-md-3 col-lg-3" src="dbsite/evidencias/guane_frijoles2023/IMG-20221211-WA0003.webp" width="50%" height="60%" >
-                        </a>
-                        <a href="dbsite/evidencias/guane_frijoles2023/IMG-20221215-WA0019.webp" data-lightbox="guane_frijoles2023">
-                            <img class="col-sm-10 col-md-3 col-lg-3 " src="dbsite/evidencias/guane_frijoles2023/IMG-20221215-WA0019.webp"  width="50%" height="60%">
-                        </a>
-                        <a href="dbsite/evidencias/guane_frijoles2023/IMG-20221215-WA0021.webp" data-lightbox="guane_frijoles2023">
-                          <img class="col-sm-10 col-md-3 col-lg-3 " src="dbsite/evidencias/guane_frijoles2023/IMG-20221215-WA0021.webp" width="60%" height="60%" >
-                        </a>
-                        <a href="dbsite/evidencias/guane_frijoles2023/IMG-20221223-WA0060.webp" data-lightbox="guane_frijoles2023">
-                            <img class="col-sm-10 col-md-3 col-lg-3 " src="dbsite/evidencias/guane_frijoles2023/IMG-20221223-WA0060.webp"  width="60%" height="60%">
-                        </a>
-                        <a href="dbsite/evidencias/guane_frijoles2023/IMG-20221228-WA0002.webp" data-lightbox="guane_frijoles2023">
-                          <img class="col-sm-10 col-md-3 col-lg-3 " src="dbsite/evidencias/guane_frijoles2023/IMG-20221228-WA0002.webp" width="60%" height="60%" >
-                        </a>
-                        <a href="dbsite/evidencias/guane_frijoles2023/IMG-20221228-WA0004.webp" data-lightbox="guane_frijoles2023">
-                            <img class="col-sm-10 col-md-3 col-lg-3 " src="dbsite/evidencias/guane_frijoles2023/IMG-20221228-WA0004.webp"  width="60%" height="60%">
-                        </a>
-                        <a href="dbsite/evidencias/guane_frijoles2023/IMG-20221228-WA0005.webp" data-lightbox="guane_frijoles2023">
-                            <img class="col-sm-10 col-md-3 col-lg-3 " src="dbsite/evidencias/guane_frijoles2023/IMG-20221228-WA0005.webp"  width="60%" height="60%">
-                        </a>
-                    </div>
-                  </div>
-                </div>    
-              <!-- fin tab de prod-->            
-            </div>
-          </div>
-          </div>
-          <!-- fin mantua [tiene cosas] -->
-          <!-- no esta vacia , falta -->
-          <div class="card" id="VerSanJuan">
-            <div class="card-header" id="headingSnJn">
-              <h2 class="mb-0">
-                <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSnJn" aria-expanded="false" aria-controls="collapseSnJn">
-                  San Juan
-                </button>
-              </h2>
-            </div>
-            <div id="collapseSnJn" class="collapse" aria-labelledby="headingSnJn" data-parent="#accordionExample">
-              <div class="card-body">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-            </div>
-            </div>
-            <div class="card" id="VerSnd">
-            <div class="card-header" id="headingSnd">
-              <h2 class="mb-0">
-                <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSnd" aria-expanded="false" aria-controls="collapseSnd">
-                  Sandino
-                </button>
-              </h2>
-            </div>
-            <div id="collapseSnd" class="collapse" aria-labelledby="headingSnd" data-parent="#accordionExample">
-              <div class="card-body">
-                <div class="tabSpecial">
-                    <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
-                    <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-                    <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-                  </div>
-
-                  <div id="London" class="tabSpecialcontent">
-                    <h3>London</h3>
-                    <p>London is the capital city of England.</p>
-                  </div>
-
-                  <div id="Paris" class="tabSpecialcontent">
-                    <h3>Paris</h3>
-                    <p>Paris is the capital of France.</p> 
-                  </div>
-
-                  <div id="Tokyo" class="tabSpecialcontent">
-                    <h3>Tokyo</h3>
-                    <p>Tokyo is the capital of Japan.</p>
-                  </div>
-                </div>
-            </div>
-            </div>
+        </div><!-- fin san juan [tiene cosas] -->
     </div>
-    </div>
-
+  </div>
+  <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 <script src="js/bootstrap5.bundle.min.js"></script>
     <script src="js/vendor/jquery-1.11.2.min.js" ></script>
     <script src="js/plugins.js" ></script>
     <script src="js/main.js" ></script>
     <script src="js/myfuncs.js" ></script> 
-     
+    <script>
+      // Hide Header on on scroll down
+      var didScroll;
+      var lastScrollTop = 0;
+      var delta = 5;
+      var navbarHeight = $('header').outerHeight();
+
+      $(window).scroll(function(event){
+          didScroll = true;
+      });
+
+      setInterval(function() {
+          if (didScroll) {
+              hasScrolled();
+              didScroll = false;
+          }
+      }, 250);
+
+      function hasScrolled() {
+          var st = $(this).scrollTop();
+          
+          // Make sure they scroll more than delta
+          if(Math.abs(lastScrollTop - st) <= delta)
+              return;
+          
+          // If they scrolled down and are past the navbar, add class .nav-up.
+          // This is necessary so you never see what is "behind" the navbar.
+          if (st > lastScrollTop && st > navbarHeight){
+              // Scroll Down
+              $('header').removeClass('nav-down').addClass('nav-up');
+          } else {
+              // Scroll Up
+              if(st + $(window).height() < $(document).height()) {
+                  $('header').removeClass('nav-up').addClass('nav-down');
+              }
+          }
+          
+          lastScrollTop = st;
+      }
+  </script>
+    
 </body>
 </html>
